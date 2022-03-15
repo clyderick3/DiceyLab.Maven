@@ -2,12 +2,15 @@
 public class Bins {
     //bins should have an array or list of some sort.
     // That is meant to track the # of times all possible dice roll sums have been reached.
-    //For example, if there is a dice object meant to represent two dice, the corresponding
+    //For example, if there is a die object meant to represent two dice, the corresponding
     // bins class should be able to track every sum between 2 - 12.
     //If it were for 3, it would be between 3 -18. The lowest roll combo and the highest combo.
-    //Arrays start at 0 so adjust the 10 so it'll be accurate.
+    //Arrays start at 0 so adjust the 10, so it'll be accurate.
     //0 will always be equal to the lowest possible roll. Subtract the number of dice to get your min.
+private int[] bin;
+public Bins (int min, int max){
 
+}
 }
 //A bin is something that retains something.
 //The bin will hold the value of each sum from each roll.
