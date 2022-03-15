@@ -7,9 +7,27 @@ public class Bins {
     //If it were for 3, it would be between 3 -18. The lowest roll combo and the highest combo.
     //Arrays start at 0 so adjust the 10, so it'll be accurate.
     //0 will always be equal to the lowest possible roll. Subtract the number of dice to get your min.
-private int[] bin;
-public Bins (int min, int max){
+private static int min; //minimum roll value
+private static int max; //maximum roll value
+private static int[] bin;
 
+public Bins () {
+    int min = 1;
+    int max = 6;
+    int [] bin = new int[max+1];
+
+    }
+    public Bins (int min, int max) {
+    //look into accessed via instance reference.
+    this.min = min;
+    this.max = max;
+    this.bin = new int[max+1];
+}
+    public void incrementBin (int num) {
+        bin[num]++;
+    }
+    public int getBin(int num) {
+        return bin[num];
 }
 }
 //A bin is something that retains something.
@@ -21,5 +39,5 @@ public Bins (int min, int max){
 //If we use 10, we get back the number of tens in the bin container
 //that stores the number of tens in that bin container that stores the range.
 //Identify the number to count in the bin.
-//Wnat to have the bin find a number and counts how many times that
+//Want to have the bin find a number and counts how many times that
 // number appears within our range. Then adds that to the sum.
