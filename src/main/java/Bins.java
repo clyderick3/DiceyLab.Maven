@@ -28,8 +28,8 @@ public Bins () {
     }
 
 
-    public int getBin(int num) {
-        return bin[num-min];
+    public int getBin(int tossSumToGetCountOf) {
+        return bin[tossSumToGetCountOf-min];
 }
 }
 //A bin is something that retains something.

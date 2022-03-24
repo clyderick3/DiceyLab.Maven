@@ -24,10 +24,15 @@ public void incrementBinTest() {
 @Test
 public void getBin() {
     //Given
-
+    Bins bin = new Bins();
+    bin.incrementBin(1);
+    bin.incrementBin(2);
+    bin.incrementBin(2);
+    //Checking for the sum of 1 one. It came back once. Actual checks for 1. 1/3.
     //When
-
+    int actual = bin.getBin(1);
+    int expected = 1;
     //Then
-
+    Assert.assertEquals(expected, actual);
     }
 }
