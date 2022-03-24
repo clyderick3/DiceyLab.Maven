@@ -26,6 +26,8 @@ public Bins () {
     public void incrementBin (int num) {
         bin[num]++;
     }
+
+
     public int getBin(int num) {
         return bin[num];
 }
