@@ -20,7 +20,7 @@ public class Simulation {
 
     public static void run (Integer numOfDice, Integer numOfToss) {
         Dice dice = new Dice (numOfDice);
-        Bins bins = new Bins (); //
+        Bins bins = new Bins (numOfDice, numOfDice * 6); //Fix out of bounds with parameter.
 
         for (int i = 0; i < numOfToss; i++){
             dice.tossAndSum();
