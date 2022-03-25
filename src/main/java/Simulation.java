@@ -1,5 +1,6 @@
 public class Simulation {
     public static void main(String[] args) {
+        entryMessage();
         run(2,1000000);
     }
 
@@ -26,7 +27,15 @@ public class Simulation {
             dice.tossAndSum();
             bins.incrementBin(dice.tossAndSum());
         }
+    }
 
+    public static void printResults(){
+
+    }
+
+    public static void entryMessage(){
+        System.out.println("***\nSimulation of 2 dice tossed for 1000000 times.\n" +
+                "***");
     }
 
 
