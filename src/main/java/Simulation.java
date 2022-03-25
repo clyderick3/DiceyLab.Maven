@@ -3,8 +3,20 @@ public class Simulation {
         run(2,1000000);
     }
 
+    private Dice dice;
+    private Bins bins;
+    private Integer numOfDice;
+    private Integer numOfToss;
+
 
     //psvm = public static void method
+
+    public Simulation (Integer numOfDice, Integer numOfToss){
+        this.numOfDice = numOfDice;
+        this.numOfToss = numOfToss;
+        this.bins = bins;
+        this.dice = dice;
+    }
     public static void run (Integer numOfDice, Integer numOfToss) {
         Dice dice = new Dice (numOfDice);
         Bins bins = new Bins (); //
