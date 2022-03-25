@@ -7,9 +7,9 @@ public class Bins {
     //If it were for 3, it would be between 3 -18. The lowest roll combo and the highest combo.
     //Arrays start at 0 so adjust the 10, so it'll be accurate.
     //0 will always be equal to the lowest possible roll. Subtract the number of dice to get your min.
- private static int min; //minimum roll value
- private static int max; //maximum roll value
- private static int[] bin;
+    private static int min; //minimum roll value
+    private static int max; //maximum roll value
+    static int[] bin;
 
 public Bins () {
     this.min = 1;
