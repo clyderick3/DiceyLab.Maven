@@ -14,9 +14,10 @@ public class Simulation {
     public Simulation (Integer numOfDice, Integer numOfToss){
         this.numOfDice = numOfDice;
         this.numOfToss = numOfToss;
-        this.bins = bins;
-        this.dice = dice;
+        this.bins = new Bins(numOfDice, numOfDice * 6);
+        this.dice = new Dice(numOfDice);
     }
+
     public static void run (Integer numOfDice, Integer numOfToss) {
         Dice dice = new Dice (numOfDice);
         Bins bins = new Bins (); //
@@ -27,19 +28,8 @@ public class Simulation {
         }
 
     }
-        //doesn't see a constructor that accepts two arguments.
-        Simulation sim = new Simulation(2, 1000000);
-        sim.runSimulations();
-        sim.printResults();
-        Dice dice = new Dice(2);
-        for (int i = 0; i < 10; i++) {
-            //System.out.println(dice.tossAndSum());
-            Integer result = dice.tossAndSum();
-            if (result >= 10) {
-                System.out.println(result);
+
 
                 //Create a simulation where two die are throw 1,000,000 times.
             }
-        }
-    }
 
